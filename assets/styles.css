@@ -1,0 +1,330 @@
+body {
+  margin: unset;
+  padding: unset;
+  font-family: Montserrat;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  background: #c52727;
+  padding: 13px 17px;
+}
+
+.headerLink {
+  text-decoration: none;
+  color: #fffcfc;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.leftSide {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.vkIcon {
+  background-image: url("./assets/vk-icon.png");
+}
+.tgIcon {
+  background-image: url("./tg-icon.png");
+}
+
+.firstSection {
+  height: 100%;
+  width: 100%;
+  /* background: url(./main-photo.png); */
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position-x: center;
+}
+
+.main-photo {
+  width: 100%;
+}
+
+@keyframes slide-left {
+  from {
+    translate: 150vw 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+@keyframes slide-right {
+  from {
+    translate: -150vw 0;
+  }
+
+  to {
+    translate: 0 0;
+  }
+}
+
+.topTitle {
+  animation-duration: 3s;
+  animation-name: slide-left;
+
+  color: #353434;
+  top: 129px;
+  right: 46px;
+  position: absolute;
+  font-size: 56.25px;
+}
+
+.bottomTitle {
+  animation-duration: 3s;
+  animation-name: slide-right;
+  color: #736262;
+  top: 425px;
+  left: 51px;
+  position: absolute;
+  font-size: 37.88px;
+}
+
+.descriptionSection {
+  background: #a91414;
+  display: flex;
+  height: 270px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.descriptionText {
+  font-weight: 500;
+  color: #fff;
+  font-size: 23.25px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.line {
+  width: 200px;
+  height: 2px;
+  background: #fffcfc;
+  border-radius: 17px;
+}
+
+.myFlow {
+  padding-top: 28px;
+}
+
+.title {
+  text-align: center;
+  line-height: 42px;
+  font-size: 48px;
+}
+
+.slideElement {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 23.25px;
+}
+
+.slideImage {
+  width: 400px;
+}
+
+.glide__slide--active {
+  padding-top: 50px;
+  transition: 500ms padding ease-out;
+}
+
+.slideText {
+  font-weight: 500;
+  font-size: 23.25px;
+  text-align: center;
+}
+
+.aboutSection {
+  margin-top: 45px;
+  font-size: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutHeader {
+}
+
+.aboutImage {
+  position: relative;
+}
+
+.aboutImage::after {
+  width: 500px;
+  content: "";
+  position: absolute;
+  left: -46px;
+  bottom: -35px;
+  z-index: -1;
+  background-image: url(./aboutImage.png);
+  background-size: 100% 100%;
+  height: 482px;
+}
+
+.aboutTitle {
+  font-size: 45px;
+}
+
+.aboutSubtitle {
+  font-family: Raleway;
+  color: #736262;
+  font-size: 37.88px;
+}
+
+.aboutDesctiptionTitle {
+  font-size: 40px;
+}
+
+.aboutDesctiptionText {
+  font-size: 23px;
+  max-width: 600px;
+}
+
+.aboutContent {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aboutImageImg {
+  width: 500px;
+}
+
+.lastSection {
+  padding-top: 90px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.lastSection > .title {
+  line-height: 42px;
+
+  font-size: 48px;
+  font-family: Raleway;
+  color: #040404;
+}
+
+.lastSection > .content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lastSectionImg {
+  width: 625px;
+}
+
+.content > .leftSide {
+    font-size: 23.25px;
+    background: #A91414;
+    border-radius: 98px;
+  color: #fffcfc;
+  width: min-content;
+  display: flex;
+  gap: 20px;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.content > .rightSide {
+    font-size: 23.25px;
+    background: #A91414;
+    border-radius: 98px;
+  color: #fffcfc;
+  width: min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftSide > .text {
+    padding-top: 44px;
+    max-width: fit-content;
+    padding-left: 42px;
+    padding-right: 23px;
+}
+.rightSide > .text {
+    
+    padding-top: 44px;
+    max-width: fit-content;
+    padding-left: 42px;
+    padding-right: 23px;
+}
+
+
+.footer{
+    margin-top: 37px;
+    color: #FFFCFC;
+    background: #A91414;
+    border-radius: 93px 93px 0 0;
+}
+
+.footerContent{
+    padding-top: 65px;
+    display: flex
+;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer > .title{
+    padding-top: 27px;
+}
+
+.footerLeft{
+    font-size: 40px;
+    border: 3px solid;
+    font-weight: 500;
+    width: 450px;
+    padding: 15px;
+}
+.footerRight{
+    font-size: 40px;
+    border: 3px solid;
+    font-weight: 500;
+    width: 450px;
+    padding: 15px;
+}
+
+.registrationButton{
+    border: unset;
+    font-size: 40px;
+    background: #FFFCFC;
+    padding-left: 29px;
+    padding-right: 29px;
+    border-radius: 22px;
+    font-weight: 600;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.aboutDesctiptionModalButton{
+    border: unset;
+    background: #A91414;
+    color: #FFFCFC;
+    font-size: 28px;
+    border-radius: 22px;
+    padding: 12px 18px;
+    cursor: pointer;
+}
+
+.regBtn{
+    padding-top: 53px;
+    display: flex;
+    justify-content: center;
+}
