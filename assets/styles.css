@@ -385,9 +385,9 @@ text-decoration: none;
 .modal {
     width: 100%;
     position: fixed;
-    top: 66px;
+    top: 0px;
     /* left: 0; */
-    /* height: 61%; */
+    height: 100%;
     display: none;
     justify-content: center;
     align-items: center;
@@ -447,6 +447,10 @@ text-decoration: none;
 
     .glide__slide--active{
         padding: unset;
+    }
+
+    .modal{
+        font-size: 12px;
     }
 
 }
