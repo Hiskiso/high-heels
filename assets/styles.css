@@ -383,15 +383,14 @@ text-decoration: none;
 
 /* Стили модального окна */
 .modal {
-    padding-left: 12px;
-  width: 90%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  display: none;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 66px;
+    /* left: 0; */
+    /* height: 61%; */
+    display: none;
+    justify-content: center;
+    align-items: center;
 }
 .modalContent {
   position: relative;
