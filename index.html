@@ -28,12 +28,12 @@
            <a href="#services" class="headerLink">УСЛУГИ</a>
         </div>
         <div class="rightSide">
-            <!-- <a href="https://vk.com/" class="social vkIcon">
+            <a href="https://vk.com/" class="social vkIcon">
                 <img src="./assets/vk-icon.png" alt="" srcset="">
             </a>
             <a href="https://t.me/" class="social tgICon">
                 <img src="./assets/tg-icon.png" alt="" srcset="">
-            </a> -->
+            </a>
         </div>
     </div>
 
@@ -55,7 +55,7 @@
             <div class="line"></div>
         </div>
 
-        <div class="myFlow">
+        <div id="my-flow" class="myFlow">
             <div class="title">МОЙ ПУТЬ</div>
             <div class="carouselContainer">
                 <div class="glide">
@@ -103,7 +103,7 @@
             </div>
         </div>
 
-        <div class="aboutSection">
+        <div id="about" class="aboutSection">
             <div class="aboutHeader">
                 <div class="aboutTitle">
                     СОФЬЯ ДУБОВИЦКАЯ 
@@ -133,14 +133,14 @@
 <br/>
 в которых я выступала.
                     </div>
-                    <div >
-                        <button class="aboutDesctiptionModalButton" >Полное описание</button>
+                    <div class="openModalButtonWrapper" >
+                        <button id="openModalButton" class="aboutDesctiptionModalButton" >Полное описание</button>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="lastSection">
+        <div id="hh" class="lastSection">
             <div class="title">
                 ПОЧЕМУ HIGH HEELS?
             </div>
@@ -167,7 +167,7 @@
         
     </div>
 
-    <div class="footer">
+    <div id="services" class="footer">
         <div class="title">
             УСЛУГИ
         </div>
@@ -183,16 +183,58 @@
         </div>
 
        <div class="regBtn">
-        <button class="registrationButton">
+        <a href="https://t.me/" class="registrationButton">
             Записаться
-        </button>
+        </a>
        </div>
 
         <div class="socialLinks">
-            <div class="vk">vk</div>
-            <div class="tg">tg</div>
+            <a href="https://vk.com/" class="social vkIcon">
+                <img src="./assets/vk-icon.png" alt="" srcset="">
+            </a>
+            <a href="https://t.me/" class="social tgICon">
+                <img src="./assets/tg-icon.png" alt="" srcset="">
+            </a>
         </div>
 
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modalContent">
+            <ol>
+                <li>
+                    ДДТ «Гармония», г. Ртищево
+                    <br/>
+                    (Контемпорари с элементами джаз-модерна)
+                    <br/>Руководитель: А. Ю. Поздняков
+                    <br/>- Лауреат I степени: конкурс «Сказки на Неве», 
+                    <br/>г. Санкт-Петербург, 2017 г
+                    <br/> - Победы на конкурсах: г. Саратов.
+                    <br/>- Гран-при: Всероссийский конкурс «Енот», г. Балашов, 2018 г.
+                </li>
+                <li>
+                    Hip-Hop (команда Happy Feet)  
+                    <br/>Руководитель: Н. В. Поздняков
+                    <br/>- Лауреат II степени: конкурс «Universal Battle» 
+                    <br/>(hip-hop), г. Пенза, 2020 г
+                    <br/>- Топ-10: Всероссийский танцевальный конкурс, 
+                    <br/>г. Казань, 2020 г.
+                </li>
+                <li>
+                    High Heels (команда 2Much)  
+                    <br/>Руководитель: Данильцев В. А.
+                    <br/>- Участие: номинация High Heels Pro на чемпионате «Fame Your Choreo», г. Москва, 2023 г.
+                    <br/>- II место: чемпионат «Битва Каблуков», 2024 г.
+                    <br/>- участие в баттлах в категории all styles high heels 
+                    <br/>и снимаюсь в многочисленных танцевальных проектах.
+                    <br/>
+                    <br/>Этот путь дал мне не только возможность быть частью успешных 
+                    <br/>коллективов, но и укрепить уверенность 
+                    <br/>в себе как в танцоре, готовом принимать любые творческие вызовы.
+                </li>
+            </ol>
+        <div id="closeModalButton" class="closeModal">x</div>
+        </div>
     </div>
 
     <script src="https://unpkg.com/@glidejs/glide@3.7.1/dist/glide.js"></script>

@@ -9,6 +9,7 @@ body {
   flex-direction: row;
   background: #c52727;
   padding: 13px 17px;
+  justify-content: space-between;
 }
 
 .headerLink {
@@ -24,14 +25,30 @@ body {
   flex-direction: row;
 }
 
+.rightSide {
+  display: flex;
+
+  align-items: center;
+}
+
 .vkIcon {
   background-image: url("./assets/vk-icon.png");
 }
+
+.social.vkIcon > img {
+  width: 44px;
+}
+
+.social.tgICon > img {
+  width: 39px;
+}
+
 .tgIcon {
   background-image: url("./tg-icon.png");
 }
 
 .firstSection {
+    background:#a91414;
   height: 100%;
   width: 100%;
   /* background: url(./main-photo.png); */
@@ -228,9 +245,9 @@ body {
 }
 
 .content > .leftSide {
-    font-size: 23.25px;
-    background: #A91414;
-    border-radius: 98px;
+  font-size: 23.25px;
+  background: #a91414;
+  border-radius: 98px;
   color: #fffcfc;
   width: min-content;
   display: flex;
@@ -240,9 +257,9 @@ body {
 }
 
 .content > .rightSide {
-    font-size: 23.25px;
-    background: #A91414;
-    border-radius: 98px;
+  font-size: 23.25px;
+  background: #a91414;
+  border-radius: 98px;
   color: #fffcfc;
   width: min-content;
   display: flex;
@@ -251,80 +268,192 @@ body {
 }
 
 .leftSide > .text {
-    padding-top: 44px;
-    max-width: fit-content;
-    padding-left: 42px;
-    padding-right: 23px;
+  padding-top: 44px;
+  max-width: fit-content;
+  padding-left: 42px;
+  padding-right: 23px;
 }
 .rightSide > .text {
+  padding-top: 44px;
+  max-width: fit-content;
+  padding-left: 42px;
+  padding-right: 23px;
+}
+
+.footer {
+  margin-top: 37px;
+  color: #fffcfc;
+  background: #a91414;
+  border-radius: 93px 93px 0 0;
+}
+
+.footerContent {
+  padding-top: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer > .title {
+  padding-top: 27px;
+}
+
+.footerLeft {
+  font-size: 40px;
+  border: 3px solid;
+  font-weight: 500;
+  width: 450px;
+  padding: 15px;
+}
+.footerRight {
+  font-size: 40px;
+  border: 3px solid;
+  font-weight: 500;
+  width: 450px;
+  padding: 15px;
+}
+
+.registrationButton {
+color: #000;
+text-decoration: none;
+  border: unset;
+  font-size: 40px;
+  background: #fffcfc;
+  padding-left: 29px;
+  padding-right: 29px;
+  border-radius: 22px;
+  font-weight: 600;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.aboutDesctiptionModalButton {
+  border: unset;
+  background: #a91414;
+  color: #fffcfc;
+  font-size: 28px;
+  border-radius: 22px;
+  padding: 12px 18px;
+  cursor: pointer;
+}
+
+.regBtn {
+  padding-top: 53px;
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.modalContent {
+  position: relative;
+  padding: 12px;
+  background: #fffcfc;
+  border-radius: 22px;
+}
+
+.closeModal {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+
+@media (max-width: 1300px) {
+    .lastSection > .content{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .rightSide > .text{
+        
+    padding-bottom: 25px;
+    }
+
+    .aboutContent{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .openModalButtonWrapper{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .footerContent{
+        flex-wrap: wrap;
+        gap: 20px
+    }
+
+    .glide__slide--active{
+        padding: unset;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .lastSectionImg{
+        width: 100dvw;
+    }
+    .aboutImageImg{
+        width: 100dvw;
+    }
+
+    .footerContent > * {
+        font-size: 20px;
+        width: unset;
+    }
+
+    .header{
+        display: none;
+    }
     
-    padding-top: 44px;
-    max-width: fit-content;
-    padding-left: 42px;
-    padding-right: 23px;
+    .leftSide > * {
+        font-size: 20px;
+    }
+
+    .bottomTitle {
+        font-size: 15.88px;
+        
+    top: 230px;
+    }
+
+    .topTitle{
+        top: 50px;
+        font-size: 24.25px;
+    
+    }
+
+    .aboutImage::after{
+        width: 100dvw;
+        height: 100dvw;
+    }
+
 }
 
+@media (max-width: 500px) {
+    .bottomTitle{
+        font-size: 12.88px;
+        top: 3px;
+        top: 142px;
+        left: 20px;
+    
+    }
 
-.footer{
-    margin-top: 37px;
-    color: #FFFCFC;
-    background: #A91414;
-    border-radius: 93px 93px 0 0;
-}
-
-.footerContent{
-    padding-top: 65px;
-    display: flex
-;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.footer > .title{
-    padding-top: 27px;
-}
-
-.footerLeft{
-    font-size: 40px;
-    border: 3px solid;
-    font-weight: 500;
-    width: 450px;
-    padding: 15px;
-}
-.footerRight{
-    font-size: 40px;
-    border: 3px solid;
-    font-weight: 500;
-    width: 450px;
-    padding: 15px;
-}
-
-.registrationButton{
-    border: unset;
-    font-size: 40px;
-    background: #FFFCFC;
-    padding-left: 29px;
-    padding-right: 29px;
-    border-radius: 22px;
-    font-weight: 600;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    cursor: pointer;
-}
-
-.aboutDesctiptionModalButton{
-    border: unset;
-    background: #A91414;
-    color: #FFFCFC;
-    font-size: 28px;
-    border-radius: 22px;
-    padding: 12px 18px;
-    cursor: pointer;
-}
-
-.regBtn{
-    padding-top: 53px;
-    display: flex;
-    justify-content: center;
+    .topTitle{
+        top: 50px;
+        font-size: 14.25px;
+    }
 }
