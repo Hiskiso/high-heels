@@ -5,6 +5,10 @@ body {
   font-family: Montserrat;
 }
 
+/* Плавный скролл по ссылкам */
+html {
+    scroll-behavior: smooth;
+    }
 
 /* Стили для заголовка с ссылками */
 .header {
