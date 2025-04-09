@@ -102,9 +102,11 @@ body {
 }
 
 .descriptionSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
   background: #a91414;
   display: flex;
-  height: 270px;
+ 
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -381,9 +383,17 @@ text-decoration: none;
     padding-bottom: 25px;
     }
 
+    .aboutSection{
+        padding-left: 12px;
+    }
     .aboutContent{
         flex-wrap: wrap;
         gap: 50px;
+   
+    }
+    .descriptionSection{
+        
+        padding-left: 12px;
     }
 
     .openModalButtonWrapper{
@@ -439,6 +449,10 @@ text-decoration: none;
     .aboutImage::after{
         width: 100dvw;
         height: 100dvw;
+    }
+
+    .descriptionText{
+        font-size: 13.25px;
     }
 
 }
