@@ -1,244 +1,287 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-<link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.core.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Optional Theme Stylesheet -->
-<link rel="stylesheet" href="https://unpkg.com/@glidejs/glide/dist/css/glide.theme.min.css">
-
-<link rel="stylesheet" href="./assets/styles.css">
+    <!-- Подключение стилей библотеки карусели -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
+    <!-- Подключение основных стилей -->
+    <link rel="stylesheet" href="./assets/styles.css" />
     <title>HIGH HEELS</title>
-</head>
-<body>
+  </head>
+  <body>
+
+    <!-- Заголовок с ссылками -->
     <div class="header">
-        <div class="leftSide">
-           <a href="#about" class="headerLink">ОБО МНЕ</a>
-           <a href="#my-flow" class="headerLink">МОЙ ПУТЬ</a>
-           <a href="#hh" class="headerLink">HIGH HEELS</a>
-           <a href="#services" class="headerLink">УСЛУГИ</a>
-        </div>
-        <div class="rightSide">
-            <a href="https://vk.com/" class="social vkIcon">
-                <img src="./assets/vk-icon.png" alt="" srcset="">
-            </a>
-            <a href="https://t.me/" class="social tgICon">
-                <img src="./assets/tg-icon.png" alt="" srcset="">
-            </a>
-        </div>
+      <div class="leftSide">
+        <a href="#about" class="headerLink">ОБО МНЕ</a>
+        <a href="#my-flow" class="headerLink">МОЙ ПУТЬ</a>
+        <a href="#hh" class="headerLink">HIGH HEELS</a>
+        <a href="#services" class="headerLink">УСЛУГИ</a>
+      </div>
+      <div class="rightSide">
+        <a href="https://vk.com/" class="social vkIcon">
+          <img src="./assets/vk-icon.png" alt="" srcset="" />
+        </a>
+        <a href="https://t.me/" class="social tgICon">
+          <img src="./assets/tg-icon.png" alt="" srcset="" />
+        </a>
+      </div>
     </div>
+
 
     <div class="content">
-        <div class="firstSection">
-            <div class="topTitle">СОФЬЯ <br/> ДУБОВИЦКАЯ </div>
-            <div class="bottomTitle">ПРЕПОДАВАТЕЛЬ <br/> HIGH HEELS</div>
-            <img class="main-photo" src="./assets/main-photo.png" alt="" srcset="">
-        </div>
-        <div class="descriptionSection">
-            <div class="line"></div>
-            <div class="descriptionText">
-                Постоянная работа над техникой, изучение новых стилей 
-                <br/>
-                и стремление к самосовершенствованию позволяют танцору 
-                <br/>
-                достигать высоких результатов.
-            </div>
-            <div class="line"></div>
-        </div>
 
-        <div id="my-flow" class="myFlow">
-            <div class="title">МОЙ ПУТЬ</div>
-            <div class="carouselContainer">
-                <div class="glide">
-                    <div class="glide__track" data-glide-el="track">
-                      <ul class="glide__slides">
-                        <li class="glide__slide ">
-                            <div class="slideElement">
-                                <img class="slideImage" src="./assets/firstSlide.png" alt="">
-                                <div class="slideText">
-                                    ДДТ «Гармония», г. Ртищево
-                                    <br/>
-                                    Руководитель: А. Ю. Поздняков
-                                    <br/>
-                                    2010-2020 гг.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide ">
-                            <div class="slideElement">
-                                <img class="slideImage" src="./assets/secondSlide.png" alt="">
-                                <div class="slideText">
-                                    Hip-Hop (команда Happy Feet)  
-                                    <br/>
-                                    Руководитель: Н. В. Поздняков
-                                    <br/>
-                                    2020-2022 гг.
-                                </div>
-                            </div>
-                        </li>
-                        <li class="glide__slide ">
-                            <div class="slideElement">
-                                <img class="slideImage" src="./assets/nextSlide.png" alt="">
-                                <div class="slideText">
-                                    High Heels (команда 2Much)  
-                                    <br/>
-                                    Руководитель: В. А. Данильцев 
-                                    <br/>
-                                    2022-2024 гг.
-                                </div>
-                            </div>
-                        </li>
-                      </ul>
+        <!-- Первый экран "СОФЬЯ ДУБОВИЦКАЯ" -->
+      <div class="firstSection">
+        <div class="topTitle">
+          СОФЬЯ <br />
+          ДУБОВИЦКАЯ
+        </div>
+        <div class="bottomTitle">
+          ПРЕПОДАВАТЕЛЬ <br />
+          HIGH HEELS
+        </div>
+        <img
+          class="main-photo"
+          src="./assets/main-photo.png"
+          alt=""
+          srcset=""
+        />
+      </div>
+
+
+      <!-- Небольшой блок с цитатой -->
+      <div class="descriptionSection">
+        <div class="line"></div>
+        <div class="descriptionText">
+          Постоянная работа над техникой, изучение новых стилей
+          <br />
+          и стремление к самосовершенствованию позволяют танцору
+          <br />
+          достигать высоких результатов.
+        </div>
+        <div class="line"></div>
+      </div>
+
+
+      <!-- Блок "Мой путь" -->
+      <div id="my-flow" class="myFlow">
+        <div class="title">МОЙ ПУТЬ</div>
+
+        <!-- Карусель -->
+        <div class="carouselContainer">
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="slideElement">
+                    <img
+                      class="slideImage"
+                      src="./assets/firstSlide.png"
+                      alt=""
+                    />
+                    <!-- Элемент карусели -->
+                    <div class="slideText">
+                      ДДТ «Гармония», г. Ртищево
+                      <br />
+                      Руководитель: А. Ю. Поздняков
+                      <br />
+                      2010-2020 гг.
                     </div>
                   </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="slideElement">
+                    <img
+                      class="slideImage"
+                      src="./assets/secondSlide.png"
+                      alt=""
+                    />
+                    <div class="slideText">
+                      Hip-Hop (команда Happy Feet)  
+                      <br />
+                      Руководитель: Н. В. Поздняков
+                      <br />
+                      2020-2022 гг.
+                    </div>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="slideElement">
+                    <img
+                      class="slideImage"
+                      src="./assets/nextSlide.png"
+                      alt=""
+                    />
+                    <div class="slideText">
+                      High Heels (команда 2Much)  
+                      <br />
+                      Руководитель: В. А. Данильцев
+                      <br />
+                      2022-2024 гг.
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div id="about" class="aboutSection">
-            <div class="aboutHeader">
-                <div class="aboutTitle">
-                    СОФЬЯ ДУБОВИЦКАЯ 
-                </div>
-                <div class="aboutSubtitle">
-                    Преподаватель HIGH HEELS
-                </div>
-            </div>
-            <div class="aboutContent">
-                <div class="aboutImage">
-                    <img class="aboutImageImg" src="./assets/aboutImage.png" alt="">
-                </div>
-                <div class="aboutDescription">
-                    <div class="aboutDesctiptionTitle">
-                        КРАТКАЯ БИОГРАФИЯ
-                    </div>
-                    <div class="aboutDesctiptionText">
-За моими плечами 14 лет опыта в танцевальной индустрии, и с ранних лет я постоянно исследую новые стили и стремлюсь к развитию. 
-<br/>
-<br/>
-За это время я освоила такие направления, 
-<br/>
-как contemporary с элементами джаз-модерна, dancehall, hip-hop и high heels. 
-<br/>
-<br/>
-Каждый этап моей карьеры был насыщенным, позволяя учиться и расти вместе с командами, 
-<br/>
-в которых я выступала.
-                    </div>
-                    <div class="openModalButtonWrapper" >
-                        <button id="openModalButton" class="aboutDesctiptionModalButton" >Полное описание</button>
-                    </div>
-                </div>
-            </div>
+
+      <!-- Блок описания -->
+      <div id="about" class="aboutSection">
+        <div class="aboutHeader">
+          <div class="aboutTitle">СОФЬЯ ДУБОВИЦКАЯ</div>
+          <div class="aboutSubtitle">Преподаватель HIGH HEELS</div>
         </div>
-
-        <div id="hh" class="lastSection">
-            <div class="title">
-                ПОЧЕМУ HIGH HEELS?
+        <div class="aboutContent">
+          <div class="aboutImage">
+            <img class="aboutImageImg" src="./assets/aboutImage.png" alt="" />
+          </div>
+          <div class="aboutDescription">
+            <div class="aboutDesctiptionTitle">КРАТКАЯ БИОГРАФИЯ</div>
+            <div class="aboutDesctiptionText">
+              За моими плечами 14 лет опыта в танцевальной индустрии, и с ранних
+              лет я постоянно исследую новые стили и стремлюсь к развитию.
+              <br />
+              <br />
+              За это время я освоила такие направления,
+              <br />
+              как contemporary с элементами джаз-модерна, dancehall, hip-hop и
+              high heels.
+              <br />
+              <br />
+              Каждый этап моей карьеры был насыщенным, позволяя учиться и расти
+              вместе с командами,
+              <br />
+              в которых я выступала.
             </div>
-            <div class="content">
-                <div class="leftSide">
-                    <img class="lastSectionImg" src="./assets/lastSelectionLeft.png" alt="">
-                    <div class="text">
-                        Все стили, которые я осваивала, стали основой моего развития, ведь они позволяют комбинировать элементы женственного танца с динамикой уличных стилей. 
-                        <br/>
-                        High heels — это вершина этой эволюции: стиль, который требует безупречной техники, силы и уверенности.  
-                    </div>
-                </div>
-
-                <div class="rightSide">
-                    <img class="lastSectionImg" src="./assets/lastSelectionRight.png" alt="">
-                    <div class="text">
-                        Именно эта многогранность привлекает меня 
-                        <br/>
-                        в high heels:  ты можешь быть одновременно нежной и сильной, создавая иллюзии, используя пластику тела и хореографию, заимствованную из других стилей. 
-                    </div>
-                </div>
+            <div class="openModalButtonWrapper">
+                <!-- Кнопка открытия модального окна -->
+              <button id="openModalButton" class="aboutDesctiptionModalButton">
+                Полное описание
+              </button>
             </div>
+          </div>
         </div>
-        
+      </div>
+
+      <!-- Блок  ПОЧЕМУ HIGH HEELS?-->
+      <div id="hh" class="lastSection">
+        <div class="title">ПОЧЕМУ HIGH HEELS?</div>
+        <div class="content">
+          <div class="leftSide">
+            <img
+              class="lastSectionImg"
+              src="./assets/lastSelectionLeft.png"
+              alt=""
+            />
+            <div class="text">
+              Все стили, которые я осваивала, стали основой моего развития, ведь
+              они позволяют комбинировать элементы женственного танца с
+              динамикой уличных стилей.
+              <br />
+              High heels — это вершина этой эволюции: стиль, который требует
+              безупречной техники, силы и уверенности.  
+            </div>
+          </div>
+
+          <div class="rightSide">
+            <img
+              class="lastSectionImg"
+              src="./assets/lastSelectionRight.png"
+              alt=""
+            />
+            <div class="text">
+              Именно эта многогранность привлекает меня
+              <br />
+              в high heels: ты можешь быть одновременно нежной и сильной,
+              создавая иллюзии, используя пластику тела и хореографию,
+              заимствованную из других стилей.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+
+   <!-- Блок "Услуги" -->
     <div id="services" class="footer">
-        <div class="title">
-            УСЛУГИ
-        </div>
-
-        <div class="footerContent">
-            <div class="footerLeft">
-                ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ
-            </div>
-            <div class="footerRight">
-                ГРУППОВЫЕ ЗАНЯТИЯ
-            </div>
-            
-        </div>
-
-       <div class="regBtn">
-        <a href="https://t.me/" class="registrationButton">
-            Записаться
+      <div class="title">УСЛУГИ</div>
+      <div class="footerContent">
+        <div class="footerLeft">ИНДИВИДУАЛЬНЫЕ ЗАНЯТИЯ</div>
+        <div class="footerRight">ГРУППОВЫЕ ЗАНЯТИЯ</div>
+      </div>
+      <div class="regBtn">
+        <a href="https://t.me/" class="registrationButton"> Записаться </a>
+      </div>
+      <div class="socialLinks">
+        <a href="https://vk.com/" class="social vkIcon">
+          <img src="./assets/vk-icon.png" alt="" srcset="" />
         </a>
-       </div>
-
-        <div class="socialLinks">
-            <a href="https://vk.com/" class="social vkIcon">
-                <img src="./assets/vk-icon.png" alt="" srcset="">
-            </a>
-            <a href="https://t.me/" class="social tgICon">
-                <img src="./assets/tg-icon.png" alt="" srcset="">
-            </a>
-        </div>
-
+        <a href="https://t.me/" class="social tgICon">
+          <img src="./assets/tg-icon.png" alt="" srcset="" />
+        </a>
+      </div>
     </div>
 
+    <!-- Модальное окно -->
     <div id="modal" class="modal">
-        <div class="modalContent">
-            <ol>
-                <li>
-                    ДДТ «Гармония», г. Ртищево
-                    <br/>
-                    (Контемпорари с элементами джаз-модерна)
-                    <br/>Руководитель: А. Ю. Поздняков
-                    <br/>- Лауреат I степени: конкурс «Сказки на Неве», 
-                    <br/>г. Санкт-Петербург, 2017 г
-                    <br/> - Победы на конкурсах: г. Саратов.
-                    <br/>- Гран-при: Всероссийский конкурс «Енот», г. Балашов, 2018 г.
-                </li>
-                <li>
-                    Hip-Hop (команда Happy Feet)  
-                    <br/>Руководитель: Н. В. Поздняков
-                    <br/>- Лауреат II степени: конкурс «Universal Battle» 
-                    <br/>(hip-hop), г. Пенза, 2020 г
-                    <br/>- Топ-10: Всероссийский танцевальный конкурс, 
-                    <br/>г. Казань, 2020 г.
-                </li>
-                <li>
-                    High Heels (команда 2Much)  
-                    <br/>Руководитель: Данильцев В. А.
-                    <br/>- Участие: номинация High Heels Pro на чемпионате «Fame Your Choreo», г. Москва, 2023 г.
-                    <br/>- II место: чемпионат «Битва Каблуков», 2024 г.
-                    <br/>- участие в баттлах в категории all styles high heels 
-                    <br/>и снимаюсь в многочисленных танцевальных проектах.
-                    <br/>
-                    <br/>Этот путь дал мне не только возможность быть частью успешных 
-                    <br/>коллективов, но и укрепить уверенность 
-                    <br/>в себе как в танцоре, готовом принимать любые творческие вызовы.
-                </li>
-            </ol>
+      <div class="modalContent">
+        <ol>
+          <li>
+            ДДТ «Гармония», г. Ртищево
+            <br />
+            (Контемпорари с элементами джаз-модерна)
+            <br />Руководитель: А. Ю. Поздняков <br />- Лауреат I степени:
+            конкурс «Сказки на Неве», <br />г. Санкт-Петербург, 2017 г <br /> -
+            Победы на конкурсах: г. Саратов. <br />- Гран-при: Всероссийский
+            конкурс «Енот», г. Балашов, 2018 г.
+          </li>
+          <li>
+            Hip-Hop (команда Happy Feet)  
+            <br />Руководитель: Н. В. Поздняков <br />- Лауреат II степени:
+            конкурс «Universal Battle» <br />(hip-hop), г. Пенза, 2020 г <br />-
+            Топ-10: Всероссийский танцевальный конкурс, <br />г. Казань, 2020 г.
+          </li>
+          <li>
+            High Heels (команда 2Much)  
+            <br />Руководитель: Данильцев В. А. <br />- Участие: номинация High
+            Heels Pro на чемпионате «Fame Your Choreo», г. Москва, 2023 г.
+            <br />- II место: чемпионат «Битва Каблуков», 2024 г. <br />-
+            участие в баттлах в категории all styles high heels  <br />и
+            снимаюсь в многочисленных танцевальных проектах.
+            <br />
+            <br />Этот путь дал мне не только возможность быть частью успешных
+            <br />коллективов, но и укрепить уверенность <br />в себе как в
+            танцоре, готовом принимать любые творческие вызовы.
+          </li>
+        </ol>
         <div id="closeModalButton" class="closeModal">x</div>
-        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/@glidejs/glide@3.7.1/dist/glide.js"></script>
     <script src="./assets/index.js"></script>
-    
-</body>
+  </body>
 </html>

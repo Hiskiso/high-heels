@@ -1,3 +1,4 @@
+// Подключение библиотки карусели и ее включение
 new Glide('.glide', {
   type: 'carousel',
   startAt: 1,
@@ -16,6 +17,8 @@ new Glide('.glide', {
   }
 }).mount()
 
+
+// Обработка работы модального окна
 let openModalButton = document.getElementById("openModalButton")
 let closeModalButton = document.getElementById("closeModalButton")
 let modal = document.getElementById("modal")
