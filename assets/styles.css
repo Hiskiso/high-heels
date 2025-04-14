@@ -100,20 +100,22 @@ html {
   animation-name: slide-left;
 
   color: #353434;
-  top: 129px;
-  right: 46px;
+ 
+  
+  top: 17vw;
+  right: 3vw;
   position: absolute;
-  font-size: 56.25px;
+  font-size: 4vw;
 }
 
 .bottomTitle {
   animation-duration: 3s;
   animation-name: slide-right;
   color: #736262;
-  top: 425px;
-  left: 51px;
-  position: absolute;
-  font-size: 37.88px;
+  left: 5vw;
+  top: 39vw;
+  position: absolute;    
+  font-size: 2.7vw;
 }
 
 
@@ -428,16 +430,7 @@ text-decoration: none;
 /* Адаптивность */
 
 @media (max-width: 1196px) {
-  .bottomTitle {
-    top: 286px;
-    left: 51px;
-    font-size: 21.88px;
-  
-  }
-
-  .topTitle {
-    font-size: 40.25px;
-}
+ 
 }
 
 @media (max-width: 1300px) {
@@ -502,6 +495,15 @@ text-decoration: none;
         width: unset;
     }
 
+    .topTitle{
+      top: 10vw;
+    }
+
+    .bottomTitle{
+      
+  top: 30vw;
+    }
+
     .header{
         display: none;
     }
@@ -510,17 +512,7 @@ text-decoration: none;
         font-size: 20px;
     }
 
-    .bottomTitle {
-        font-size: 15.88px;
-        
-    top: 230px;
-    }
-
-    .topTitle{
-        top: 50px;
-        font-size: 24.25px;
-    
-    }
+   
 
     .aboutImage::after{
         width: 100dvw;
@@ -528,37 +520,19 @@ text-decoration: none;
     }
 
     .descriptionText{
-        font-size: 10.25px;
+        font-size: 2.9vw;
     }
 
 }
 
 
 @media (max-width: 636px) {
-  .bottomTitle {
-    font-size: 12.88px;
-    top: 175px;
-  
-  }
+ 
 
-  .topTitle {
-    top: 50px;
-    font-size: 20.25px;
-}
+  
 }
 @media (max-width: 500px) {
-    .bottomTitle{
-      font-size: 11.88px;
-      top: 3px;
-      top: 131px;
-      left: 12px;
-    
-    }
-
-    .topTitle{
-        top: 50px;
-        font-size: 14.25px;
-    }
+   
 
     .slideImage{
       
@@ -568,21 +542,7 @@ text-decoration: none;
   }
 
   @media (max-width: 350px) {
-    .bottomTitle {
-      font-size: 9.88px;
-      top: 3px;
-      top: 111px;
-      left: 12px;
-  }
-
-  .topTitle {
-    top: 41px;
-    font-size: 10.25px;
-}
-
-.aboutTitle {
-  font-size: 33px;
-}
+    
 
   }
 
